@@ -7,7 +7,7 @@ class ViewPost extends React.Component {
     commentInput = React.createRef();
     constructor(props){
         super(props);
-        console.log(this.props.match.params)
+        //console.log(this.props.match.params)
         this.handleCommentSubmit.bind(this)
     }
     state = {
@@ -118,7 +118,7 @@ class ViewPost extends React.Component {
 
     handleEditComment = async(e,editingId,editingUser) => {
         e.preventDefault()
-        console.log(this.state.commenterDisplayName)
+        //console.log(this.state.commenterDisplayName)
         const comment = {
             postId: this.state.postId,
             content: this.commentInput.current.value,

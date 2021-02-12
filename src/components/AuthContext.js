@@ -71,7 +71,7 @@ class AuthProvider extends React.Component {
                 user: {}
             })
             this.props.history.push(`/`)
-            console.log('signed out')
+            //console.log('signed out')
         } catch(error) {
             this.setState({
                 authMessage: error.messages
